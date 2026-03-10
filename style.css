@@ -172,8 +172,8 @@ body {
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  grid-template-columns: 1fr;
 }
 
 .testimonial-box {
@@ -205,6 +205,20 @@ body {
 .client-role {
   font-size: 13px;
   color: gray;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .testimonials-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .hero {
