@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarav Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/camera.svg" type="image/svg" />
 </head>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
-<link rel="icon" href="camera.svg" type="image/svg" />
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fa-regular fa-camera" style="color: #ff6600;"></i>
-                <span style="margin-left: 10px;">Aarav Patel</span>
+                <i class="fa-regular fa-camera"></i>
+                <span>Aarav Patel</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="contact.html" class="book-now">Book Now</a></li> -->
             </ul>
         </nav>
     </header>
@@ -35,44 +38,55 @@
             and discuss your vision.
         </p>
 
-        <form class="booking-form">
+        <form class="booking-form" id="contactForm">
 
             <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" placeholder="Enter your name">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" autocomplete="name">
+                <small class="error-message"></small>
             </div>
 
             <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="text" placeholder="Enter your phone number">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" autocomplete="email">
+                <small class="error-message"></small>
             </div>
 
             <div class="form-group">
-                <label>Session Type</label>
-                <select>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" autocomplete="phone">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="session">Session Type</label>
+                <select id="session">
                     <option>Portraits</option>
                     <option>Events</option>
                     <option>Lifestyle</option>
                     <option>Other</option>
                 </select>
+                <small class="error-message"></small>
             </div>
 
             <div class="form-group">
-                <label>Preferred Date</label>
-                <input type="date">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date">
+                <small class="error-message"></small>
             </div>
 
             <div class="form-group">
-                <label>Message</label>
-                <textarea placeholder="Tell me about your shoot..."></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell me about your shoot..."></textarea>
+                <small class="error-message"></small>
             </div>
+
             <button class="submit-btn">Book Appointment</button>
 
         </form>
+
+        <!-- Success message -->
+        <p id="successMessage" class="success-message"></p>
 
         <div class="contact-info">
             <p>Email: aarav@example.com</p>
@@ -81,7 +95,11 @@
         </div>
 
     </div>
-</body>
+    <button id="backToTopBtn">↑</button>
+    <script src="js/btnToTop.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/navigation.js"></script>
 
+</body>
 
 </html>

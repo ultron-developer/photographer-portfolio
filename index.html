@@ -5,31 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarav Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/camera.svg" type="image/svg" />
 </head>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
-<link rel="icon" href="camera.svg" type="image/svg" />
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fa-regular fa-camera" style="color: #ff6600;"></i>
-                <span style="margin-left: 10px;">Aarav Patel</span>
+                <i class="fa-regular fa-camera"></i>
+                <span>Aarav Patel</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="contact.html" class="book-now">Book Now</a></li> -->
             </ul>
         </nav>
     </header>
     <section class="hero">
 
         <div class="hero-content">
-            <h1>Capturing Your Story, One Frame at a Time</h1>
+            <h2>Capturing Your Story, One Frame at a Time</h2>
             <p>
                 Ottawa-based photographer specializing in portraits,
                 lifestyle, and events
@@ -42,7 +45,7 @@
         </div>
 
     </section>
-    <div class="image-grid" style="padding: 20px;">
+    <div class="image-grid">
         <div class="image-box">
             <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
         </div>
@@ -55,7 +58,7 @@
             <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
         </div>
     </div>
-    <section class="testimonials-section">
+    <!-- <section class="testimonials-section">
 
         <h2 class="testimonials-title">What People Say</h2>
         <p class="testimonials-subtitle">Don't just take my word for it</p>
@@ -103,7 +106,7 @@
 
         </div>
 
-    </section>
+    </section> -->
     <!-- AI-assisted: Used ChatGPT to help with pricing section specially with grid layout -->
     <section class="pricing">
 
@@ -167,8 +170,10 @@
         </p>
 
     </section>
+    <button id="backToTopBtn">↑</button>
+    <script src="js/btnToTop.js"></script>
+    <script src="js/navigation.js"></script>
+
 </body>
 
-
 </html>
-

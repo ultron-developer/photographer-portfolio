@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarav Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/camera.svg" type="image/svg" />
 </head>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/df07135094.js" crossorigin="anonymous"></script>
-<link rel="icon" href="camera.svg" type="image/svg" />
+
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fa-regular fa-camera" style="color: #ff6600;"></i>
-                <span style="margin-left: 10px;">Aarav Patel</span>
+                <i class="fa-regular fa-camera"></i>
+                <span>Aarav Patel</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="contact.html" class="book-now">Book Now</a></li> -->
             </ul>
         </nav>
     </header>
@@ -32,7 +36,8 @@
             <div class="about-container">
 
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1719257751404-1dea075324bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoZXIlMjBoZWFkc2hvdCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NjkxMTE1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Aarav Photographer">
+                    <img src="https://images.unsplash.com/photo-1719257751404-1dea075324bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoZXIlMjBoZWFkc2hvdCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NjkxMTE1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                        alt="Aarav Photographer">
                 </div>
 
                 <div class="about-text">
@@ -64,10 +69,10 @@
 
         </section>
 
-        <h1 class="title">Portfolio</h1>
+        <h2 class="title">Portfolio</h2>
         <p class="subtitle">Explore my recent work</p>
 
-        <div class="image-grid" style="padding-bottom: 20px;">
+        <div class="image-grid">
             <div class="image-box">
                 <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
             </div>
@@ -94,8 +99,11 @@
         </div>
 
     </div>
+    <button id="backToTopBtn">↑</button>
+    <script src="js/btnToTop.js"></script>
+    <script src="js/navigation.js"></script>
+
 </body>
 
 
 </html>
-
