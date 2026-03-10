@@ -17,8 +17,8 @@
 **4> Added 'for' attributes for all the labels in the form acording to thier input fields**.
 **5> Added id for all the input fields in the form**.
 **6> `box-sizing: border-box` is now applied to globally rather than one class**.
+**7> Added alt attribute in every image (either Image not found or respective name tag)**.
 
-images al attributes
 Several critical semantic elements are entirely absent: no `<main>`, no `<article>`, and no `<footer>` on any page.
 
 ---
@@ -30,6 +30,10 @@ Several critical semantic elements are entirely absent: no `<main>`, no `<articl
 **Request 2: Form Validation with Error Messages :** Added error messageand validation in almost all form fields.. I had help from the resources you mentioned and some more youtube videos. And also success message for few seconds after submission.
 
 **Request 3: Back to Top Button :** Added the button on right bottom area after the user scroll to 300 px or more it shows up.
+
+**Request 4: Dynamic Content Rendering from Data :** Converted the testimonials section in the index page in to dynamic from static. all the data is in testimonials.js file.
+
+**Request 5: Accordion FAQ or Tabbed Content Section :** Implimented the option B (tabs). Three tabs in the about page : About Aarav, Team , Gallery (Previous work photos).
 
 ---
 

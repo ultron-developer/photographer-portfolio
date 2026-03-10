@@ -31,77 +31,99 @@
         </nav>
     </header>
     <div class="main-container">
-        <section class="about-section">
 
-            <div class="about-container">
+        <section class="tabs-section">
 
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1719257751404-1dea075324bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoZXIlMjBoZWFkc2hvdCUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NjkxMTE1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                        alt="Aarav Photographer">
+            <div class="tabs">
+                <button class="tab active" data-tab="about">About Aarav</button>
+                <button class="tab" data-tab="team">Team</button>
+                <button class="tab" data-tab="gallery">Gallery</button>
+            </div>
+
+            <!-- TAB 1: ABOUT -->
+            <div class="tab-content active" id="about">
+                <div class="about-tab-wrapper">
+                    <div class="about-tab-image">
+                        <img src="https://images.unsplash.com/photo-1719257751404-1dea075324bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                            alt="Aarav Photographer">
+                    </div>
+                    <div class="about-tab-text">
+                        <h2>About Aarav</h2>
+                        <p>
+                            Hey there! I'm Aarav, a photographer based in Ottawa with a passion
+                            for capturing authentic moments that tell your unique story.
+                        </p>
+                        <p>
+                            For the past 5 years, I've been helping people in the Ottawa area
+                            feel comfortable in front of the camera. Whether it's a professional
+                            headshot, a lifestyle session in the city, or documenting your
+                            special event, I focus on creating a relaxed environment where
+                            your personality can shine through.
+                        </p>
+                        <p>
+                            My approach is simple: natural light, genuine expressions, and
+                            photos you'll actually want to share. No awkward poses, no stress —
+                            just you, looking your best.
+                        </p>
+                        <div class="location">📍 Based in Ottawa, ON</div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="about-text">
-                    <h1>About Aarav</h1>
 
-                    <p>
-                        Hey there! I'm Aarav, a photographer based in Ottawa with a passion
-                        for capturing authentic moments that tell your unique story.
-                    </p>
+            <!-- TAB 2: TEAM -->
+            <div class="tab-content" id="team">
+                <h2>Meet the Team</h2>
+                <p>
+                    While Aarav leads the creative direction, he works with a small but talented team:
+                </p>
 
-                    <p>
-                        For the past 5 years, I've been helping people in the Ottawa area
-                        feel comfortable in front of the camera. Whether it's a professional
-                        headshot, a lifestyle session in the city, or documenting your
-                        special event, I focus on creating a relaxed environment where
-                        your personality can shine through.
-                    </p>
+                <ul class="team-list">
+                    <li><strong>Riya Sharma</strong> — Assistant Photographer</li>
+                    <li><strong>Lucas Martin</strong> — Photo Editor & Retoucher</li>
+                    <li><strong>Amelia Brooks</strong> — Lighting & Equipment Specialist</li>
+                </ul>
 
-                    <p>
-                        My approach is simple: natural light, genuine expressions, and
-                        photos you'll actually want to share. No awkward poses, no stress —
-                        just you, looking your best.
-                    </p>
+                <p>
+                    Together, we ensure every session runs smoothly and every final image looks stunning.
+                </p>
+            </div>
 
-                    <div class="location">📍 Based in Ottawa, ON</div>
+            <!-- TAB 3: GALLERY -->
+            <div class="tab-content" id="gallery">
+                <h2>Previous Work</h2>
+
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Image Not Found">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Image Not Found">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Image Not Found">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Image Not Found">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Image Not Found">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Image Not Found">
                 </div>
-
             </div>
 
         </section>
-
-        <h2 class="title">Portfolio</h2>
-        <p class="subtitle">Explore my recent work</p>
-
-        <div class="image-grid">
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
-            </div>
-
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-            </div>
-
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
-            </div>
-
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
-            </div>
-
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-            </div>
-
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
-            </div>
-        </div>
 
     </div>
     <button id="backToTopBtn">↑</button>
     <script src="js/btnToTop.js"></script>
     <script src="js/navigation.js"></script>
+    <script>
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+
+                tabs.forEach(t => t.classList.remove("active"));
+                contents.forEach(c => c.classList.remove("active"));
+
+                tab.classList.add("active");
+                document.getElementById(tab.dataset.tab).classList.add("active");
+            });
+        });
+    </script>
 
 </body>
 

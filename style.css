@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
 }
+/*--------------- Navigation bar ---------------*/
 
 .navbar {
   display: flex;
@@ -137,6 +138,8 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/*--------------- Index.html ---------------*/
+
 .book-now {
   background-color: #ff6600;
   color: white !important;
@@ -152,8 +155,9 @@ body {
   transition: background-color 1s ease;
 }
 
+/* Testimonials */
+
 .testimonials-section {
-  padding: 80px 0;
   text-align: center;
 }
 
@@ -291,7 +295,6 @@ body {
 .main-container {
   width: 90%;
   margin: auto;
-  padding-top: 40px;
 }
 
 .title {
@@ -597,4 +600,169 @@ body {
 
 #backToTopBtn:hover {
   background-color: #e69500;
+}
+
+/* ---------------------- */
+/* TAB SECTION STYLING    */
+/* ---------------------- */
+
+.tabs-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+/* Tabs Row */
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+.tab.active {
+  background: black;
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ABOUT TAB LAYOUT */
+.about-tab-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-tab-image img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+.about-tab-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-tab-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-tab-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Team List */
+.team-list {
+  margin: 20px 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 2fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px; /* Forces uniform height */
+  object-fit: cover; /* Crops nicely without distortion */
+  border-radius: 10px;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------------------- */
+/* MOBILE OPTIMIZATION    */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  .about-tab-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-tab-image img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tab {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .about-tab-image img {
+    width: 100%;
+  }
+
+  .about-tab-text h2 {
+    font-size: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-grid img {
+    height: 150px;
+  }
 }
