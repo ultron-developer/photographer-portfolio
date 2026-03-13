@@ -31,6 +31,12 @@
         </nav>
     </header>
     <div class="main-container">
+        <div class="quote-box">
+            <h4>Thought for the Day</h4>
+            <p id="quoteText">Loading quote...</p>
+            <span id="quoteAuthor"></span>
+        </div>
+
 
         <section class="tabs-section">
 
@@ -107,8 +113,24 @@
 
     </div>
     <button id="backToTopBtn">↑</button>
+    <footer>&copy; 2026 Aarav Patel Photography. All rights reserved.</footer>
     <script src="js/btnToTop.js"></script>
     <script src="js/navigation.js"></script>
+    <script>
+        async function loadQuote() {
+            try {
+                const res = await fetch("https://api.quotable.io/quotes/random?tags=inspirational");
+                const data = await res.json();
+
+                document.getElementById("quoteText").textContent = `"${data[0].content}"`;
+                document.getElementById("quoteAuthor").textContent = `— ${data[0].author}`;
+            } catch (error) {
+                document.getElementById("quoteText").textContent = "Could not load quote.";
+            }
+        }
+
+        loadQuote();
+    </script>
     <script>
         const tabs = document.querySelectorAll(".tab");
         const contents = document.querySelectorAll(".tab-content");

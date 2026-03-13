@@ -350,6 +350,41 @@ body {
   object-fit: cover;
 }
 
+.quote-box {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 50px auto;
+  padding: 25px 30px;
+  background: #f7f7f7;
+  border-left: 5px solid black;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#quoteText {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#quoteAuthor {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #quoteText {
+    font-size: 18px;
+  }
+  #quoteAuthor {
+    font-size: 14px;
+  }
+}
+
 .about-section {
   min-height: 100vh;
   display: flex;
@@ -765,4 +800,12 @@ body {
   .gallery-grid img {
     height: 150px;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #555;
+  font-size: 14px;
 }

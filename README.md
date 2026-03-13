@@ -18,8 +18,7 @@
 **5> Added id for all the input fields in the form**.
 **6> `box-sizing: border-box` is now applied to globally rather than one class**.
 **7> Added alt attribute in every image (either Image not found or respective name tag)**.
-
-Several critical semantic elements are entirely absent: no `<main>`, no `<article>`, and no `<footer>` on any page.
+**8> Added <footer> instead of using divs in all pages.**
 
 ---
 
@@ -34,6 +33,8 @@ Several critical semantic elements are entirely absent: no `<main>`, no `<articl
 **Request 4: Dynamic Content Rendering from Data :** Converted the testimonials section in the index page in to dynamic from static. all the data is in testimonials.js file.
 
 **Request 5: Accordion FAQ or Tabbed Content Section :** Implimented the option B (tabs). Three tabs in the about page : About Aarav, Team , Gallery (Previous work photos).
+
+**Request 7: Fetch and Display Data from a Public API :** Ferching the quote of the day from the api through the API and displaying in the About us page.
 
 ---
 
