@@ -59,5 +59,7 @@ The following design changes were made compared to Assignment 1:
 
 # AI Usage Documentation
 
-ChatGPT was used for help with a couple of sections of the website and to better understand layout concepts in HTML and CSS.  
+ChatGPT was used for help with a couple of sections of the website and to better understand layout concepts in HTML and CSS.And also to get rid of some errors in the console I took help from ai.
+I also used stackoverflow for some references regarding api fetching.
+Referred to some youtube videos for making tab section and hamburger menu.
 Aside from that assistance, the majority of the code was written by me, and all content was reviewed, modified, and implemented by the student.
