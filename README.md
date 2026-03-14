@@ -18,7 +18,7 @@
 **5> Added id for all the input fields in the form**.  
 **6> `box-sizing: border-box` is now applied to globally rather than one class**.  
 **7> Added alt attribute in every image (either Image not found or respective name tag)**.  
-**8> Added <footer> instead of using divs in all pages.**
+**8> Added `<footer>` instead of using divs in all pages.**
 
 ---
 
