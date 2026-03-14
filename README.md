@@ -11,13 +11,13 @@
 
 # Improvement from Assignment 2 based on feedback
 
-**1> On all three pages, `<link>` and `<script>` tags are placed between `<head>` and `</head>`**.
-**2> The heading hierarchy was problematic with multiple `<h1>` elements on single pages, so I have limited the usage of h1**.
-**3> Removed all inline styles from all pages**.
-**4> Added 'for' attributes for all the labels in the form acording to thier input fields**.
-**5> Added id for all the input fields in the form**.
-**6> `box-sizing: border-box` is now applied to globally rather than one class**.
-**7> Added alt attribute in every image (either Image not found or respective name tag)**.
+**1> On all three pages, `<link>` and `<script>` tags are placed between `<head>` and `</head>`**.  
+**2> The heading hierarchy was problematic with multiple `<h1>` elements on single pages, so I have limited the usage of h1**.  
+**3> Removed all inline styles from all pages**.  
+**4> Added 'for' attributes for all the labels in the form acording to thier input fields**.  
+**5> Added id for all the input fields in the form**.  
+**6> `box-sizing: border-box` is now applied to globally rather than one class**.  
+**7> Added alt attribute in every image (either Image not found or respective name tag)**.  
 **8> Added <footer> instead of using divs in all pages.**
 
 ---
